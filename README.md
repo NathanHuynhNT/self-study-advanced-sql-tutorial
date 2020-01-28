@@ -1,4 +1,4 @@
-## SQL-Advanced Program ##
+# SQL-Advanced Program #
 ---
 
 1. Please brush up your SQL skills if you have not done for a while. If needed you can take my course on SQL
@@ -7,6 +7,17 @@
 3. Run all the scripts present in Lecture 7, which are necessary for the course (As shown in Lecture 6).
 4. Finish the assignments attached after each section. This ensures a smooth transition to the next section.
 5. Please feel free to start any discussion and I will get back to you at the earliest!
+
+## Create new user and GRANT ##
+```sql
+    CREATE USER INVENTORY1 IDENTIFIED BY INVENTORY1;
+
+    GRANT CONNECT, RESOURCE, DBA TO INVENTORY1;
+
+    GRANT CREATE SESSION, GRANT ANY PRIVILEGE TO INVENTORY1;
+
+    GRANT UNLIMITED TABLESPACE TO INVENTORY1;
+```
 
 Run all these below scripts on your oracle schema so that you can use this data for all your Lab
 exercises.
@@ -579,5 +590,5 @@ exercises.
     (13000,'Entry Level','Sara','K','E','678 larawd st',null,'Mississippi','USA',
     to_date('23-FEB-14','DD-MON-RR'),'Bob');
     COMMIT;
-    
+
 ```
